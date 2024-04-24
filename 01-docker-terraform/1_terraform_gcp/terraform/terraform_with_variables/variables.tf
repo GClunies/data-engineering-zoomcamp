@@ -31,7 +31,7 @@ variable "bq_dataset_name" {
 variable "gcs_bucket_name" {
   description = "My Storage Bucket Name"
   #Update the below to a unique bucket name
-  default     = "terraform-demo-bucket-gclunies"
+  default     = "terraform-demo-bucket-gclunies"  # Must be globally unique
 }
 
 variable "gcs_storage_class" {
