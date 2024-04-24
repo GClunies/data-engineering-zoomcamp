@@ -1,9 +1,14 @@
 # Development Environment Setup
-These notes serve as a guide for setting up a development environment on Google Cloud Platform (GCP) for the Data Engineering Zoomcamp course.
+Setup up a development environment on Google Cloud Platform (GCP) for the Data Engineering Zoomcamp course. I am following this [video tutorial](https://www.youtube.com/watch?v=ae-CV2KfoN0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb) - it's a bit confusing, so I've documented the steps I took below.
 
-I chose to setup my development environment in GCP so that I would have practice using virtual machines (VMs) in the cloud. This is also best practice for working on projects that require large amounts of compute power or storage (does not fit on local machine). I also wanted to practice using Terraform to manage cloud resources.
-
-I am following this [video tutorial](https://www.youtube.com/watch?v=ae-CV2KfoN0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb) - it's a bit confusing, so I've documented the steps I took below.
+My develoment environment consists of the following components:
+- Local machine (MBP-16)
+- Google Cloud Platform (GCP) to store data and run code.
+  - VM instances (compute)
+  - Cloud Storage (data lake)
+  - BigQuery (data warehouse)
+- Docker to containerize workloads
+- Terraform to manage infrastructure as code
 
 ## Prerequisites
 - Google Cloud Platform account.
