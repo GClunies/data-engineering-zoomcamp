@@ -1,5 +1,5 @@
 # Data Engineering Zoomcamp
-Personal work and notes for the Data Engineering Zoomcamp course (self-paced). I've modified and added to the notes from the course to suit my needs.
+Personal work and notes for the Data Engineering Zoomcamp course (self-paced). I've modified and added to the notes from the course to suit my needs (i.e., removing all window instructions).
 
 ## Dev Environment
 Setup steps for my environment can be found

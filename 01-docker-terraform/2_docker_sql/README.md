@@ -3,54 +3,19 @@
 Notes I used for preparing the videos: [link](https://docs.google.com/document/d/e/2PACX-1vRJUuGfzgIdbkalPgg2nQ884CnZkCg314T_OBq-_hfcowPxNIA0-z5OtMTDzuzute9VBHMjNYZFTCc1/pub)
 
 
-## Commands 
+## Commands
 
 All the commands from the video
 
 Downloading the data
 
 ```bash
-wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz 
+wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz
 ```
 
 > Note: now the CSV data is stored in the `csv_backup` folder, not `trip+date` like previously
 
 ### Running Postgres with Docker
-
-#### Windows
-
-Running Postgres on Windows (note the full path)
-
-```bash
-docker run -it \
-  -e POSTGRES_USER="root" \
-  -e POSTGRES_PASSWORD="root" \
-  -e POSTGRES_DB="ny_taxi" \
-  -v c:/Users/alexe/git/data-engineering-zoomcamp/week_1_basics_n_setup/2_docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data \
-  -p 5432:5432 \
-  postgres:13
-```
-
-If you have the following error:
-
-```
-docker run -it \
-  -e POSTGRES_USER="root" \
-  -e POSTGRES_PASSWORD="root" \
-  -e POSTGRES_DB="ny_taxi" \
-  -v e:/zoomcamp/data_engineer/week_1_fundamentals/2_docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data  \
-  -p 5432:5432 \
-  postgres:13
-
-docker: Error response from daemon: invalid mode: \Program Files\Git\var\lib\postgresql\data.
-See 'docker run --help'.
-```
-
-Change the mounting path. Replace it with the following:
-
-```
--v /e/zoomcamp/...:/var/lib/postgresql/data
-```
 
 #### Linux and MacOS
 
@@ -199,7 +164,7 @@ You can solve it with `.dockerignore`:
 * Move `ny_taxi_postgres_data` to `data` (you might need to use `sudo` for that)
 * Map `-v $(pwd)/data/ny_taxi_postgres_data:/var/lib/postgresql/data`
 * Create a file `.dockerignore` and add `data` there
-* Check [this video](https://www.youtube.com/watch?v=tOr4hTsHOzU&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb) (the middle) for more details 
+* Check [this video](https://www.youtube.com/watch?v=tOr4hTsHOzU&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb) (the middle) for more details
 
 
 
@@ -220,7 +185,7 @@ docker run -it \
     --url=${URL}
 ```
 
-### Docker-Compose 
+### Docker-Compose
 
 Run it:
 
@@ -258,6 +223,6 @@ services:
 ```
 
 
-### SQL 
+### SQL
 
 Coming soon!
