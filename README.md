@@ -1,8 +1,11 @@
 # Data Engineering Zoomcamp
-Personal work and notes for the Data Engineering Zoomcamp course (self-paced). I've modified and added to the notes from the course to suit my needs (i.e., removing all window instructions).
+Personal work and notes for the Data Engineering Zoomcamp course (self-paced).
+
+> [!NOTE]
+> I have removed all Windows specific instructions (I use mac/linux). Windows intructions can be found in the original course [repo](https://github.com/DataTalksClub/data-engineering-zoomcamp).
 
 ## Dev Environment
-Setup steps for my environment can be found
+Setup steps for my environment can be found [here](00-dev-env-setup/0_dev_env_setup.md).
 
 ## Course Resources:
 - [DataTalks.Club's Slack](https://datatalks.club/slack.html). Join the [`#course-data-engineering`](https://app.slack.com/client/T01ATQK62F8/C01FABYF2RG) channel.
