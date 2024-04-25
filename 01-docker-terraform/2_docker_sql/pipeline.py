@@ -1,3 +1,5 @@
+"""A very basic pipeline script that takes a day as an argument and prints it out"""
+
 import sys
 
 import pandas as pd
@@ -8,4 +10,4 @@ day = sys.argv[1]
 
 # some fancy stuff with pandas
 
-print(f'job finished successfully for day = {day}')
+print(f"job finished successfully for day = {day}")
