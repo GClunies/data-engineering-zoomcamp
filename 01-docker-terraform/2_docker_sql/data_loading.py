@@ -26,8 +26,8 @@ def main(args):
     password = args.password
     host = args.host
     port = args.port
-    db = args.db
-    tb = args.tb
+    db = args.database
+    tb = args.table
     url = args.url
 
     # Get the name of the file from url
@@ -95,8 +95,8 @@ if __name__ == "__main__":
     parser.add_argument("--password", help="Password to the username for Postgres.")
     parser.add_argument("--host", help="Hostname for Postgres.")
     parser.add_argument("--port", help="Port for Postgres connection.")
-    parser.add_argument("--db", help="Databse name for Postgres")
-    parser.add_argument("--tb", help="Destination table name for Postgres.")
+    parser.add_argument("--database", help="Databse name for Postgres")
+    parser.add_argument("--table", help="Destination table name for Postgres.")
     parser.add_argument("--url", help="URL for file.")
     args = parser.parse_args()
     main(args)
