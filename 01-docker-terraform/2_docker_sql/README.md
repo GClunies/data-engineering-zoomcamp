@@ -183,12 +183,14 @@ docker run -it \
 ```
 
 ### Docker-Compose
-Instead of running the containers separately, we can use `docker-compose` to run them together. The `docker-compose.yml` file in this directory defines the services (postgres and pgAdmin) and their configurations.
+Instead of running separate commdands to initialize the postgres and pgAdmin containers and connect them to the same network, we can use `docker-compose` to run them together. The `docker-compose.yml` file in this directory defines the services (postgres and pgAdmin) and their configurations.
 
 Run it:
 ```bash
 docker-compose up
 ```
+
+If you look in Docker Desktop, you will see a Docker 'stack' with two containers running: `postgres` and `pgadmin`. You can access pgAdmin at `localhost:8080` and login with the email and password you specified in the `docker-compose.yml` file.
 
 Run in detached mode:
 ```bash
